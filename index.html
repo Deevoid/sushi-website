@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#792123" />
+  <meta name="description" content="A collection of movies curated for you." />
+  <script
+    src="https://kit.fontawesome.com/ce0cd09d81.js"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ravi+Prakash&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Sushi Rolls</title>
+  <body>
+    <div class="sidebar">
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Wasabi</a>
+        <a href="#">Sushi1</a>
+        <a href="#">Sushi2</a>
+        <a href="#">Sushi3</a>
+      </div>
+    </div>
+    <header data-aos="fade-down">
+      <div class="clipdiv">
+        <span class="logo">
+          <a href="/">
+            <i class="fas fa-fish"></i>
+            <span>Sushi</span>
+          </a>
+        </span>
+      </div>
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="myCurve" clipPathUnits="objectBoundingBox">
+            <path d="M 0 1 L 0 0 L 1 0 L 1 .5 Q .5 .7 0 .5 Z"" />
+          </clipPath>
+        </defs>
+      </svg>
+    </header>
+
+    <main>
+      <div class="btn-group">
+        <button data-aos="flip-down" class="order">Order now</button>
+        <button data-aos="flip-down" class="menu" onclick="toggle()">
+          Menu<i class="fas fa-align-left"></i>
+        </button>
+      </div>
+      <div class="hero">
+        <img data-aos="zoom-in" src="./heroimg.png" class="responsive" />
+      </div>
+      <div class="section" id="section2">
+        <div class="container">
+          <h3>Lose yourself in the authentic taste</h3>
+          <div class="grid">
+            <div data-aos="fade" class="card">
+              <img data-aos="fade" src="./a1.png" alt="sushi image" />
+            </div>
+            <div class="card">
+              <img data-aos="fade" src="./a2.png" alt="sushi image" />
+            </div>
+            <div class="card">
+              <img data-aos="fade" src="./a3.png" alt="sushi image" />
+            </div>
+            <div class="card">
+              <img data-aos="fade" src="./a4.png" alt="sushi image" />
+            </div>
+          </div>
+          <p>
+            We cook ,deliver and serve the freshly catched fishes and maintain
+            the authentic taste. Our chefs gaurantees that the sushi will melt
+            in your mouth and you are definiltely going to ask for more.
+          </p>
+          <button class="order">Order now</button>
+        </div>
+      </div>
+      <div class="section" id="section3">
+        <h3>This is how we roll</h3>
+        <p>
+          We bring the authentic and real taste of the japanese susi . Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </p>
+        <img class="responsive" src="./rollBG.png" alt="list of sushi" />
+      </div>
+      <div class="section" id="section4">
+        <div class="container">
+          <h3>Chopsticks Chopsticks</h3>
+          <div class="grid">
+            <div class="text">
+              <p>
+                Need more chopstiks,feel free to ask , WIth our wide range of
+                delicacies, you will always want more.
+              </p>
+              <button class="order">Book a table</button>
+            </div>
+            <div class="illustration">
+              <img src="./illustration.png" alt="table illustration" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="section5">
+        <div class="container">
+          <h3>Choose from a plethora of delicacies</h3>
+
+          <div class="cardcontainer">
+            <a class="foodCard">
+              <h4>Menu item 1</h4>
+            </a>
+            <a class="foodCard">
+              <h4>Menu item 1</h4>
+            </a>
+            <a class="foodCard">
+              <h4>Menu item 1</h4>
+            </a>
+            <a class="foodCard">
+              <h4>Menu item 1</h4>
+            </a>
+            <a class="foodCard">
+              <h4>Menu item 1</h4>
+            </a>
+            <a class="foodCard">
+              <h4>Menu item 1</h4>
+            </a>
+            <a class="foodCard">
+              <h4>Menu item 1</h4>
+            </a>
+            <a class="foodCard">
+              <h4>Menu item 1</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span data-aos="fade-up" class="logo">
+        <a href="/">
+          <i class="fas fa-fish"></i>
+          <span>Sushi</span>
+        </a>
+        <span>We roll for you</span>
+      </span>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="copyright">
+        Developed by <a href="https://deevoid.netlify.app/">Dev </a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./scroll-lock.min.js"></script>
+    <script>
+      function toggle() {
+        let sidebar = document.querySelector(".sidebar");
+        sidebar.classList.toggle("open");
+        console.log("clicked");
+        scrollLock.toggle();
+      }
+    </script>
+  </body>
+</html>
